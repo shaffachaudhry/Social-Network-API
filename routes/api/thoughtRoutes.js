@@ -1,5 +1,7 @@
 const router = require("express").Router();
 
+// Importing functions from the thoughtController
+
 const {
   getThoughts,
   getSingleThought,
@@ -10,17 +12,16 @@ const {
   deleteReaction,
 } = require("../../controller/thoughtController");
 
-// Set up GET all and POST at /api/thoughts
+// Setting up routes for retrieving and creating thoughts
 router.route("/").get(getThoughts).post(createThought);
-
-// Set up GET one, PUT, and DELETE at /api/thoughts/:id
+// Setting up routes for retrieving, updating, and deleting a specific thought
 router
   .route("/:thoughtId")
   .get(getSingleThought)
   .put(updateThought)
   .delete(deleteThought);
 
-// router.route("/:thoughtId/reactions").post(addReaction);
+// Setting up routes for adding and deleting reactions to a thought
 router.route("/:thoughtId/reactions/:reactionId").delete(deleteReaction);
 router.route("/:thoughtId/reactions").post(addReaction);
 
