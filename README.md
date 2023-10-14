@@ -5,7 +5,6 @@ an API for a social network web application where users can share their thoughts
 ## Walk Through 
 https://drive.google.com/file/d/1kamHrf8ePTdk2R8FN760Rg-g3pUSLmIE/view
 
-
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Description](#description)
@@ -53,6 +52,7 @@ This project is covered under the MIT license.
 I am the sole contributor of this project. However, this project was built with the help of in class modules, specifically the Student Mini Project. Additional links that were helpful linked below: 
 https://www.educative.io/answers/what-is-select-in-mongoose
 https://mongoosejs.com/docs/tutorials/virtuals.html
+
 
 ## Tests 
 N/A
